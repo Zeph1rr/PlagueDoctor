@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 
-
 public class ParallaxBackground: MonoBehaviour
 {
     [SerializeField] private float _parallaxFactor = 0.5f;
@@ -16,7 +15,7 @@ public class ParallaxBackground: MonoBehaviour
 
     private void LateUpdate()
     {
-        _deltaFollowTargetPosition = _followTarget.position - _lastFollowTargetPosition;
+        _deltaFollowTargetPosition = _lastFollowTargetPosition - _followTarget.position;
 
         transform.position += _deltaFollowTargetPosition * _parallaxFactor;;
 
