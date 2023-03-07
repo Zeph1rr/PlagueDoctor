@@ -1,7 +1,7 @@
 ﻿# Augustin Dias: Plague Doctor
 
 <p align="center">
-      <img src="https://i.ibb.co/qgvr1nd/Augustin.png" alt="Project Logo" width="726">
+      <img src="https://i.ibb.co/8xrcsTv/Augustin.png" alt="Project Logo" width="726">
 </p>
 
 <p align="center">
