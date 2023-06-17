@@ -2,7 +2,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
-public class CharacterController : MonoBehaviour, IMovable
+public class CharacterMovement : MonoBehaviour, IMovable
 {
     [SerializeField] private float _speed = 5.0f;
     [SerializeField] private float _jumpForce = 5.0f;
@@ -40,5 +40,6 @@ public class CharacterController : MonoBehaviour, IMovable
     private void FixedUpdate()
     {
         _isGrounded = Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundLayer);
+        Debug.Log(_isGrounded);
     }
 }
